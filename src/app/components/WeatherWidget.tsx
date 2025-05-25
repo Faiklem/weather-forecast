@@ -15,7 +15,7 @@ export const WeatherWidget = ({ weather }: Props) => {
 	const feels = Math.round(weather.main.feels_like)
 
 	return (
-		<div className='p-3 md:p-5 rounded-xl shadow widget w-fit'>
+		<div className='p-3 md:p-5 rounded-xl widget w-fit'>
 			<p className='grid-temp temp self-center xs:mr-2'>
 				{formatTemperature(temp)}°
 			</p>
@@ -27,7 +27,7 @@ export const WeatherWidget = ({ weather }: Props) => {
 				Ощущается как {formatTemperature(feels)}°
 			</p>
 			<div className='flex gap-1 grid-wind'>
-				<Wind strokeWidth={1.75} color='white' className='wind-icon' />
+				<Wind strokeWidth={1.75} className='wind-icon' />
 				<p>{weather.wind.speed} м/с</p>
 			</div>
 		</div>
