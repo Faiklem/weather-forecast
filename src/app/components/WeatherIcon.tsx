@@ -15,7 +15,7 @@ export const WeatherIcon = ({ icon }: WeatherIconProps) => {
 			alt='Иконка погоды'
 			width={50}
 			height={50}
-			className='w-[40px] h-[40px] md:w-[50px] md:h-[50px] weather-icon'
+			className='w-[35px] h-[35px] xs:w-[40px] xs:h-[40px] md:w-[50px] md:h-[50px] weather-icon'
 			priority
 		/>
 	)

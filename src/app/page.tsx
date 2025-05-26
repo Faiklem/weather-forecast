@@ -33,7 +33,7 @@ export default function Home() {
 	return (
 		<AuthGuard>
 			<main className='flex flex-col min-h-screen items-center justify-center'>
-				<h1>Погода в Москве</h1>
+				<h1 className='mb-3 text-center'>Погода в Москве</h1>
 				{weather && <WeatherWidget weather={weather} />}
 			</main>
 		</AuthGuard>
