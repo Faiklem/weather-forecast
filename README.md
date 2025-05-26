@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## 🚀 Next.js Приложение "Прогноз погоды в Москве"
 
-## Getting Started
+Это приложение построено на [Next.js](https://nextjs.org/) — современном React-фреймворке для серверного и клиентского рендеринга.
 
-First, run the development server:
+---
+
+### 📦 Установка
+
+1. Клонируйте репозиторий:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/Faiklem/weather-forecast.git
+cd weather-forecast
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Установите зависимости через Yarn:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+yarn install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+### ▶️ Запуск проекта в режиме разработки
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+yarn dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+После запуска откройте [http://localhost:3000](http://localhost:3000) в браузере.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+### 🔧 Сборка проекта
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Собрать оптимизированную production-версию:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+yarn build
+```
+
+Запустить production-сервер после сборки:
+
+```bash
+yarn start
+```
+
+---
+
+### ✅ Требования
+
+* Node.js >= 18
+* Yarn >= 1.22
+* Next.js >= 13 (с App Router)
+
+---
+
+### 🔐 Авторизация
+
+Проект использует `localStorage` для хранения токена. Некоторые страницы защищены от неавторизованного доступа. При наличии токена пользователь автоматически перенаправляется с `/auth` на главную страницу.
