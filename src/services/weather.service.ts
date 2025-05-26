@@ -1,7 +1,7 @@
 import { WeatherResponse } from '@/types/weather-forecast.type'
 
 class WeatherForecast {
-	private API_KEY = 'd3b46508e049ff79419989b65115d1d0'
+	private API_KEY = process.env.WEATHER_API_KEY ?? ''
 	private readonly CITY_NAME = 'Moscow'
 
 	private getUrl() {

@@ -1,7 +1,7 @@
 import { AuthResponse, LoginDto } from '@/types/auth.type'
 
 class AuthService {
-	private API_KEY = 'reqres-free-v1'
+	private API_KEY = process.env.AUTH_API_KEY ?? ''
 	private URL = 'https://reqres.in/api/login'
 
 	async auth(body: LoginDto): Promise<AuthResponse> {
