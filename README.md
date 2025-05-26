@@ -7,7 +7,7 @@
 ### 🌐 Демо
 
 Развёрнутая версия доступна по адресу:  
-👉 [https://weather-forecast-4ga3.onrender.com](https://weather-forecast-4ga3.onrender.com)
+👉 [https://weather-forecast.up.railway.app](https://weather-forecast.up.railway.app)
 
 ---
 
